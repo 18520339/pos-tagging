@@ -28800,6 +28800,7 @@ tự_cảm
 tự_cao
 tự_cấp
 tự_chủ
+tự_chọn
 tự_cường
 tự_dạng
 tự_do
