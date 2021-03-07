@@ -11,12 +11,16 @@
 1. Download tập tin [CoreNLP.zip](https://drive.google.com/file/d/1CQAwUkjzVkIVqjoNCX0-EpFL9hfuCI2H/view?usp=sharing), giải nén vào thư mục, ví dụ: *D:\VnCoreNLP*
 2. Chạy **VnCoreNLPServer**:
 
-    - Mở cmd
-    - Chuyển đến thư mục *D:\VnCoreNLP*
-    - Chạy chương trình: `java -Xmx2g -jar VnCoreNLPServer.jar VnCoreNLP-1.1.jar -p 9001 -a "wseg,pos,parse"`
-
-3. Cài đặt thư viện VnCoreNLP trên Python: `pip install vncorenlp`
-4. Tạo đối tượng kết nối với **VnCoreNLPServer**:
+    - Chuyển đến thư mục *D:\VnCoreNLP* bằng cmd
+    - Chạy chương trình: 
+    ```bash
+    java -Xmx2g -jar VnCoreNLPServer.jar VnCoreNLP-1.1.jar -p 9001 -a "wseg,pos,parse"
+    ```
+3. Cài đặt thư viện VnCoreNLP trên Python: 
+    ```bash
+    pip install vncorenlp
+    ```
+5. Tạo đối tượng kết nối với **VnCoreNLPServer**:
     ```python
     from vncorenlp import VnCoreNLP
     client = VnCoreNLP(address="http://127.0.0.1", port=9001)
